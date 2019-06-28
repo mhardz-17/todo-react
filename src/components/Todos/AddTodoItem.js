@@ -18,8 +18,16 @@ class AddTodoItem extends Component {
     render() {
         return (
             <form onSubmit={this.submitForm}>
-                <input type="text" value={this.state.title} onChange={this.changeText}/>
-                <input type="submit" value="Add Item"/>
+                <div className="input-group mb-2">
+                    <input type="text" className="form-control" placeholder="Recipient's username"
+                           aria-label="Recipient's username" aria-describedby="basic-addon2"
+                           value={this.state.title} onChange={this.changeText} />
+
+                    <div className="input-group-append">
+                        <button className="btn btn-primary" type="button">Add Item</button>
+                    </div>
+                </div>
+
             </form>
         );
     }

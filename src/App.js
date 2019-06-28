@@ -40,13 +40,21 @@ class App extends Component {
                 <header className="App-header">
                     <h1>My React Todo List</h1>
                 </header>
-                <section className="Container">
-                    <AddTodoItem addItem={this.addItem}/>
-                    <Todos todos={this.state.todos} deleteItem={this.deleteItem} changeItemStatus={this.changeItemStatus} />
+                <section className="container" style={{marginTop: '5px'}}>
+                    <div className="row justify-content-md-center">
+                        <div className="col col-lg-6" style={entryStyle}>
+                            <AddTodoItem addItem={this.addItem}/>
+                            <Todos todos={this.state.todos} deleteItem={this.deleteItem} changeItemStatus={this.changeItemStatus} />
+                        </div>
+                    </div>
                 </section>
             </div>
         );
     }
+}
+
+const entryStyle={
+    // width:'500px'
 }
 
 export default App;

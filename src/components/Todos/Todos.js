@@ -11,7 +11,7 @@ class Todos extends Component {
         const renderItems = () => {
             if (this.props.todos.length > 0) {
                 return (
-                    <ul style={ulStyle}>
+                    <ul id="my-todo-list" className="list-group" style={ulStyle}>
                         {TodoItems}
                     </ul>
                 )
