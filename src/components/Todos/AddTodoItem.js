@@ -24,7 +24,7 @@ class AddTodoItem extends Component {
                            value={this.state.title} onChange={this.changeText} />
 
                     <div className="input-group-append">
-                        <button className="btn btn-primary" type="button">Add Item</button>
+                        <button className="btn btn-primary" type="submit">Add Item</button>
                     </div>
                 </div>
 
